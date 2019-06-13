@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Why every even number greater than 2 can be expressed as sum of two prime numbers?</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1>Why every even number greater than 2 can be expressed as sum of two prime numbers?</h1>
+<p><strong><em>June 13th, 2019</em> by Aziz Lokhandwala</strong></p>
+<h2>Abstract: Goldbach's Conjecture is a conjecture that every great mathematician, once tries to prove but nobody achieved success in it. I am not going to prove Goldbach's Conjecture but I can prove that why every even number greater than 2 can be expressed as the sum of two prime numbers. And yeah believe me it's a conjecture not proved for 277 to 278 years.</h2>
+
+<center><p><em>3 5 7 11 13 17 19 23 ...(i)</em></p></center>
+<center><p><strong>2 3 5 7 11 13 17 19 ...(ii)</strong></p></center>
+
+<p>Now firstly on subtracting (ii) from (i) and on adding (i) and (ii) we have following sequence,</p>
+<center><p><em>5 8 12 18 24 30 36 42 ...(iii)</em></p></center>
+<center><p><strong>1 2 2 4 2 4 2 4 ...(iv)</strong></p></center>
+<p>Now on multiplying (iii)-(iv) and (i)-(ii), we have following sequence,</p>
+<center><p><em>6 15 35 77 143 221 323 437 ...(v)</em></p></center>
+<center><p><strong>5 16 24 72 48 120 72 168 ...(vi)</strong></p></center>
+<p>On adding (v)-(vi), we have:</p>
+<center><p><em>11 31 59 149 191 341 395 605 ...(i)</em></p></center>
+<p>Observation here is that, if the number you get here is not a prime then it is either divisible by eleven or divisible by five.</p>
+<p>Now, you may ask me that where is the proof that every even number greater than two can be expressed as the sum of two primes. See the generalisations below:</p>
+<h3>GENERALISATION</h3>
+<p>Suppose you start your prime sequence P' with (n + 1)th term and another sequence P with nth term.Now you do following operations on elements of both sequence:</p>
+<p>P + P' = {even, odd}(i.e set of even and odd integers)</p>
+<p>P - P' = {even, odd}</p>
+<p>Let P + P' = Q, and P - P' = Q'</p>
+<p>(P x P') + (Q x Q') = k</p>
+<p>Now, 'k' can be a prime number and if it is not a prime number then it has atmost two factor 'a' and 'b'</p>
+<p>If 'k' is not a prime number then,</p>
+<p>Factors of PxP' and QxQ' comprises of:</p>
+<p>
+$${2^{a0}}*{3^{a1}}*{5^{a2}}... $$</p>
+<p>Here, a + a0 + a1 +... = N-{{1},{2}}</p>
+<p>In above, it says that any even integer can be expressed as sum of two prime numbers.</p>
+<p>Example 1:</p>
+<p>
+$$(35, 24) = {2^{3}}*{3^{1}}*{5^{1}}*{7^{1}}$$    
+</p>
+<p>Here,
+$$3 + 1 + 1 + 1 = 6$$
+$$3 + 3 = 6$$</p>
+<p>Example 2:</p>
+<p>
+$$(77, 72) = {2^{3}}*{3^{2}}*{11^{1}}*{7^{1}}$$    
+</p>
+<p>Here,
+$$3 + 2 + 1 + 1 = 7$$
+$$3 + 4 = 7$$
+$$3 = 7 - 4$$
+$$3 + 2 + 2 = 7$$</p>
+<p>Oh, wait you might think that why I have written "3 + 2 + 2 = 7" because I am talking about "Why every even number greater than 2 can be expressed as sum of two prime numbers?", but  wait statement of Goldbach's Conjecture also says that: "Every integer greater than 5 can be expressed as sum of three primes"</p>
+<p>So by doing this method, like Pythagorean triplets occur from Pythagorous theorem, we get every numbers which follows Goldbach's Conjecture.</p>
+<p><strong>Hence Proved</strong></p>
+    
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+   
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+
+</body>
+
+</html>
